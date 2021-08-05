@@ -26,4 +26,4 @@ $medium: 16px;
 $small: 14px;
 $x-small: 12px;
 //breakpoints
-$breakpoints: ('x-small': (min-width: 360px), 'small': (min-width: 576px), 'medium': (min-width: 768px), 'large': (min-width: 992px), 'huge': (min-width: 1200px), );
+$breakpoints: ('x-small': (max-width: 575px), 'small': (min-width: 576px), 'medium': (min-width: 768px), 'large': (min-width: 992px), 'huge': (min-width: 1200px), );

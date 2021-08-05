@@ -1,0 +1,16 @@
+/*input*/
+
+//footer list input
+.footer__list__input {
+    margin: 0.5em;
+    font-family: $poppins;
+    //input button style
+    &[type|="button"] {
+        padding: 2px;
+        border-radius: 5px;
+        background-color: $tangerine;
+        &:hover {
+            background-color: $naranja;
+        }
+    }
+}

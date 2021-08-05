@@ -1,0 +1,13 @@
+/*header*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+//header figure
+.header__figure {
+    width: 50%;
+    max-width: 750px;
+}
