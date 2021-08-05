@@ -20,28 +20,118 @@
 </head>
 
 <body>
-    <nav>
-        navbar
+    <!-- navbar -->
+    <nav class="navbar">
+        <div>
+            <img src="assets\img\logo.svg" alt="logo" class="navbar__logo">
+        </div>
+        <div class="navbar__toggler">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar__container">
+            <ul class="navbar__collapsible">
+                <li class="navbar__collapsible__item"><a href="">elemento 1</a></li>
+                <li class="navbar__collapsible__item"><a href="">elemento 2</a></li>
+                <li class="navbar__collapsible__item"><a href="">elemento 3</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <!-- header -->
     <header>
-        header
+        <figure class="header__figure">
+            <img src="assets\img\desarrolloweb2021t.svg" alt="img-header">
+        </figure>
     </header>
-    <main>
-        <section class="section__article__container">
-            <div class="article__uno">
-                article 1
+
+    <!-- main -->
+    <main class="main__section row">
+        <!-- articles -->
+        <section class="main__article col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <!-- article 1 -->
+            <div class="main__article__uno ">
+                <figure class="main__article__figure"><img src="./assets/img/html-y-cssb-.jpg" alt="post" width="100%"></figure>
+                <h2 class="main__article__title">HTML y CSS para principiantes</h2>
+                <p class="main__article_paragraph">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo sobre HTML y CSS, desde lo más básico hasta un nivel intermedio, logrando desarrollar tu primera página
+                    web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
+                <h5 class="main__article__subtitle">Instructor: Gustavo Rodriguez</h5>
+                <div class="main__article__icons">
+                    <a href="#">
+                        <i class="far fa-thumbs-up"> 1</i>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-comments"> 9</i>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-eye"> 9</i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-share-alt"> 0</i>
+                    </a>
+                </div>
             </div>
-            <div class="article__dos">
-                article 2
+            <!-- article 2 -->
+            <div class="main__article__dos">
+                <figure class="main__article__figure"> <img src="./assets/img/sass.png" alt="post" width="100%"></figure>
+                <h2 class="main__article__title">Estilos con SASS.</h2>
+                <p class="main__article_paragraph">SASS es una herramienta importante hoy en día para todo desarrollador web, ya que permite crear estilos mas ordenados, eficientes y con menos líneas de código. Por ello, en este curso aprenderás todo lo necesario para crear hojas de estilos
+                    desde la sintaxis de SCSS, implementando técnicas propias de SASS.</p>
+                <h5 class="main__article__subtitle">Instructor: Gustavo Rodriguez</h5>
+                <div class="main__article__icons">
+                    <a href="#">
+                        <i class="far fa-thumbs-up"> 1</i>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-comments"> 9</i>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-eye"> 8</i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-share-alt"> 5</i>
+                    </a>
+                </div>
             </div>
         </section>
-        <aside>
-            aside
+
+        <!-- aside -->
+        <aside class="main__aside col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <figure class="main__aside__figure"><img src="./assets/img/web-development.png" alt="logo cursos" width="100%"></figure>
+            <h3 class="main__aside__title">Cursos 2021 Ltda</h3>
+            <p class="main__aside__icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </p>
+            <p class="main__aside__paragraph">Cursos 2021 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo desde lo más básico de HTML y CSS, hasta lo más complejo con SASS y JavaScript. Igualmente se ofrecen cursos más especializados para el
+                BackEnd, implementación de frameworks para el frontEnd, entre otros.</p>
+            <h3 class="main__aside__subtitle">Más Cursos</h3>
+            <ul class="main__aside__list">
+                <li><a href="#">Analítica Web (3)</a></li>
+                <li><a href="#">Diseño Web (4)</a></li>
+                <li><a href="#">Desarrollo BackEnd (9)</a></li>
+                <li><a href="#">Seguridad Informática(14)</a></li>
+                <li><a href="#">Social Media (7)</a></li>
+                <li><a href="#">SEO (8)</a></li>
+                <li><a href="#">UI/UX (3)</a></li>
+                <li><a href="#">JavaScript (5)</a></li>
+                <li><a href="#">VueJS (1)</a></li>
+            </ul>
+            <div class="main__aside__image">
+                animacion
+            </div>
         </aside>
-        main
     </main>
-    <footer>
-        footer
+
+    <!-- footer -->
+    <footer class="footer">
+        <h5 class="footer__text">@2021 Todos los derechos reservados.</h5>
+        <ul class="footer__list">
+            <li><a href="">Legal</a></li>
+            <li><a href="">Sobre Anuncios</a></li>
+            <input type="email" name="email" id="email" placeholder="e-mail">
+            <input type="button" value="Enviar">
+        </ul>
     </footer>
 
 </body>

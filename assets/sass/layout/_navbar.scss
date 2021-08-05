@@ -1,0 +1,42 @@
+/*navbar*/
+
+//navbar
+.navbar {
+    background-color: $negro;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//navbar logo
+.navbar__logo {
+    max-width: 75px;
+}
+
+//navbar collapsible
+.navbar__collapsible {
+    display: none;
+    a {
+        color: $blanco;
+    }
+}
+
+//navbar toggler
+.navbar__toggler {
+    display: block;
+    position: absolute;
+    right: 40px;
+    color: $blanco;
+}
+
+@include respond-to('medium') {
+    .navbar__collapsible {
+        display: flex;
+        flex-direction: row;
+        padding: 0 3em;
+    }
+    .navbar__toggler {
+        display: none;
+    }
+}

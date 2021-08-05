@@ -1,6 +1,58 @@
 /*manifest*/
 /*mixins*/
 /*variables*/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*navbar*/
+.navbar {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  max-width: 75px;
+}
+
+.navbar__collapsible {
+  display: none;
+}
+.navbar__collapsible a {
+  color: white;
+}
+
+.navbar__toggler {
+  display: block;
+  position: absolute;
+  right: 40px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .navbar__collapsible {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3em;
+  }
+
+  .navbar__toggler {
+    display: none;
+  }
+}
 /*container grid*/
 .container {
   margin-left: auto;
