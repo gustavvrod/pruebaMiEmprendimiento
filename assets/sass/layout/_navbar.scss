@@ -1,6 +1,6 @@
 /*navbar*/
 
-//navbar
+//navbar display properties for small and x-small screen
 .navbar {
     background-color: $negro;
     display: flex;
@@ -32,6 +32,7 @@
     color: $blanco;
 }
 
+//mixin display for medium and larger screen's
 @include respond-to('medium') {
     .navbar__collapsible {
         display: flex;

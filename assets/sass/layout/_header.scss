@@ -6,8 +6,16 @@
     justify-content: center;
 }
 
-//header figure
+//header figure display for small and smaller screen's
 .header__figure {
-    width: 50%;
-    max-width: 750px;
+    width: 90%;
+    max-width: 300px;
+}
+
+//mixin display for medium and larger screen's
+@include respond-to('medium') {
+    .header__figure {
+        width: 50%;
+        max-width: 750px;
+    }
 }

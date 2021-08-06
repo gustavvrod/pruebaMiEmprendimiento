@@ -349,10 +349,16 @@ a {
 }
 
 .header__figure {
-  width: 50%;
-  max-width: 750px;
+  width: 90%;
+  max-width: 300px;
 }
 
+@media (min-width: 768px) {
+  .header__figure {
+    width: 50%;
+    max-width: 750px;
+  }
+}
 /*main*/
 .main__section {
   margin: 10px;
@@ -446,26 +452,24 @@ a {
 }
 
 .main__aside__image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin: 2em auto;
   width: 50%;
 }
 
 /*footer*/
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 1em 0;
   background-color: black;
 }
 .footer__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  padding: 1em;
 }
 .footer__list a {
   color: white;
@@ -474,6 +478,46 @@ a {
   padding: 0.5em;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer__list {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__list__item {
+    padding: 1em;
+  }
+}
+/*animation*/
+.svg__code {
+  animation: translate 3s infinite linear alternate;
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(3em);
+  }
+}
+.svg__nut {
+  animation: nutSpin 3s infinite alternate;
+  transform-origin: 80% 80%;
+}
+
+@keyframes nutSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*input*/
 .footer__list__input {
   margin: 0.5em;

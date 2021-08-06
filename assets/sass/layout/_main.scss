@@ -100,9 +100,6 @@
 
 //main aside image{
 .main__aside__image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin: 2em auto;
     width: 50%;
 }
