@@ -1,0 +1,45 @@
+/*navbar*/
+
+//navbar display properties for small and x-small screen
+.navbar {
+    background-color: $negro;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+//navbar logo
+.navbar__logo {
+    max-width: 50px;
+}
+
+//navbar collapsible
+.navbar__collapsible {
+    display: none;
+    a {
+        color: $blanco;
+        padding: 0.5em;
+    }
+}
+
+//navbar toggler
+.navbar__toggler {
+    display: block;
+    position: absolute;
+    right: 40px;
+    color: $blanco;
+}
+
+//mixin display for medium and larger screen's
+@include respond-to('medium') {
+    .navbar__collapsible {
+        display: flex;
+        flex-direction: row;
+        padding: 0 3em;
+    }
+    .navbar__toggler {
+        display: none;
+    }
+}

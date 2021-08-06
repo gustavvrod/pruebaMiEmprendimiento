@@ -1,0 +1,30 @@
+/*animation*/
+
+//svg codigo class translate
+.svg__code {
+    animation: translate 3s infinite linear alternate;
+}
+
+@keyframes translate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(3em);
+    }
+}
+
+//svg nut class rotate
+.svg__nut {
+    animation: nutSpin 3s infinite alternate;
+    transform-origin: 80% 80%;
+}
+
+@keyframes nutSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
